@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { withKnobs, text } from "@storybook/addon-knobs";
 import ReactMailchimpEmailSignupForm from "./react-mailchimp-email-signup-form";
 
@@ -9,21 +9,33 @@ export default {
 
 export const Base = () => {
   return (
-    <ReactMailchimpEmailSignupForm
-      elementId={text("elementId", "first-email-signup-form")}
-      url={text("url", "https://mailchimp.com/")}
-      title={text("title", "Subscribe to the Newsletter")}
-      subtitle={text("subtitle", "We take privacy seriously and we'll never spam or sell your information.")}
-    />
+    <Fragment>
+      <ReactMailchimpEmailSignupForm
+        elementId={text("elementId", "first-email-signup-form")}
+        url={text("url", "https://mailchimp.com/")}
+        title={text("title", "Subscribe to the Newsletter")}
+        subtitle={text("subtitle", "We take privacy seriously and we will never spam or sell your information.")}
+      />
+
+      <p>
+        Link to component's <a href="https://github.com/johndatserakis/react-mailchimp-email-signup-form">github.</a>
+      </p>
+    </Fragment>
   )
 };
 
 export const NoSubtitle = () => {
   return (
-    <ReactMailchimpEmailSignupForm
-      elementId={text("elementId", "second-email-signup-form")}
-      url={text("url", "https://mailchimp.com/")}
-      title={text("title", "Subscribe to the Newsletter")}
-    />
+    <Fragment>
+      <ReactMailchimpEmailSignupForm
+        elementId={text("elementId", "second-email-signup-form")}
+        url={text("url", "https://mailchimp.com/")}
+        title={text("title", "Subscribe to the Newsletter")}
+      />
+
+      <p>
+        Link to component's <a href="https://github.com/johndatserakis/react-mailchimp-email-signup-form">github.</a>
+      </p>
+    </Fragment>
   )
 };

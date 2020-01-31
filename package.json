@@ -9,12 +9,14 @@
   ],
   "description": "Easily collect email signups using MailChimp.",
   "scripts": {
-    "build": "npm run test && rm -rf ./dist && rollup -c && npm run deploy-storybook",
+    "build": "npm run test && rm -rf ./dist && rollup -c",
     "test": "jest",
     "test:watch": "jest --watch",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "deploy-storybook": "storybook-to-ghpages"
+    "deploy-storybook": "storybook-to-ghpages",
+    "deploy-npm": "npm publish",
+    "deploy": "npm deploy-storybook && npm run deploy"
   },
   "repository": {
     "type": "git",
