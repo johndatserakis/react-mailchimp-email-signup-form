@@ -1,17 +1,19 @@
 import React from "react";
+import { withKnobs, text } from "@storybook/addon-knobs";
 import ReactMailchimpEmailSignupForm from "./react-mailchimp-email-signup-form";
 
 export default {
-  title: "ReactMailchimpEmailSignupForm"
+  title: "ReactMailchimpEmailSignupForm",
+  decorators: [withKnobs]
 };
 
 export const Base = () => {
   return (
     <ReactMailchimpEmailSignupForm
-      elementId="first-email-signup-form"
-      url="https://google.com"
-      title="Subscribe to the Newsletter"
-      subtitle="We take privacy seriously and we'll never spam or sell your information."
+      elementId={text("elementId", "first-email-signup-form")}
+      url={text("url", "https://mailchimp.com/")}
+      title={text("title", "Subscribe to the Newsletter")}
+      subtitle={text("subtitle", "We take privacy seriously and we'll never spam or sell your information.")}
     />
   )
 };
@@ -19,9 +21,9 @@ export const Base = () => {
 export const NoSubtitle = () => {
   return (
     <ReactMailchimpEmailSignupForm
-      elementId="second-email-signup-form"
-      url="https://google.com"
-      title="Subscribe to the Newsletter"
+      elementId={text("elementId", "second-email-signup-form")}
+      url={text("url", "https://mailchimp.com/")}
+      title={text("title", "Subscribe to the Newsletter")}
     />
   )
 };

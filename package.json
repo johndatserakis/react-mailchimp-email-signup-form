@@ -9,7 +9,7 @@
   ],
   "description": "Easily collect email signups using MailChimp.",
   "scripts": {
-    "build": "npm run test && rm -rf ./dist && rollup -c",
+    "build": "npm run test && rm -rf ./dist && rollup -c && npm run deploy-storybook",
     "test": "jest",
     "test:watch": "jest --watch",
     "storybook": "start-storybook -p 6006",
@@ -64,5 +64,8 @@
     "sass-loader": "^8.0.0",
     "ts-jest": "^24.2.0",
     "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "@storybook/addon-knobs": "^5.3.9"
   }
 }
