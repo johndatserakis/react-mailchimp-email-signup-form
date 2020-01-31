@@ -106,12 +106,12 @@ I looked into using the MailChimp API option, but that is not going to work from
 
 ### Props
 
-| prop | type | required | default | possible values | description |
-|---|---|---|---|---|---|--|
-| elementId | String | Yes | | | A unique string form your element. |
-| url | String | Yes | | | The particular form `post` url from your MailChimp page. |
-| title | String | Yes | | | A title for your signup form. |
-| subtitle | String | No | | | A subtitle for your signup form. |
+| prop      | type   | required | default | possible values | description                        |
+|-----------|--------|----------|---------|-----------------|------------------------------------|
+| elementId | String | Yes      |         |                 | A unique string form your element. |
+| url       | String | Yes      |         |                 | The particular form `post` url from your MailChimp page. |
+| title     | String | Yes      |         |                 | A title for your signup form.      |
+| subtitle  | String | No       |         |                 | A subtitle for your signup form.   |
 
 ### SCSS Structure
 
