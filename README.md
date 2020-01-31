@@ -100,6 +100,8 @@ This may look different in your case. Make sure you replace `&amp;` with an actu
 
 That's it! Just add an `elementId`, `title`, and an optional `subtitle` and you're off.
 
+You can see this form in action on my [blog](https://blog.johndatserakis.com/).
+
 ### Notes
 
 I looked into using the MailChimp API option, but that is not going to work from a purely static-type of site. So, while this does have your users leave the page, it ends up being a great option because you really don't have to do anything with any backend at all. Just make sure you have the proper site settings set up so it redirects users back to your blog or whatever. You do this on MailChimp's side.
