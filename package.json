@@ -16,7 +16,7 @@
     "build-storybook": "build-storybook",
     "deploy-storybook": "storybook-to-ghpages",
     "deploy-npm": "npm publish",
-    "deploy": "npm deploy-storybook && npm run deploy"
+    "deploy": "npm run deploy-storybook && npm run deploy-npm"
   },
   "repository": {
     "type": "git",

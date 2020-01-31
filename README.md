@@ -93,16 +93,16 @@ Go to your MailChimp admin. Click on `Create`, the `Signup Form`. Now, choose yo
 On the next screen, you'll see some demos for some embedded forms MailChip is offering. We don't want those - but we *do* want to `url` they bring. Go into the form and grab the `url` from the `<form></form>` `action` attribute. For me, this looks something like the following:
 
 ```bash
-https://XXXXX.us4.list-manage.com/subscribe/post?u=XXXXXXXXXXXXXXXXXXXXXXXX&amp;id=XXXXXXXXXX
+https://XXXXX.us4.list-manage.com/subscribe/post?u=XXXXXXXXXXXXXXXXXXXXXXXX&id=XXXXXXXXXX
 ```
 
-This may look different in your case.
+This may look different in your case. Make sure you replace `&amp;` with an actual `&` if it gets copied like that.
 
 That's it! Just add an `elementId`, `title`, and an optional `subtitle` and you're off.
 
 ### Notes
 
-I looked into using the MailChimp API option, but that is not going to work from a purely static-type of site. So, while this does have your users leave the page, it ends up being a great option because you really don't have to do anything with any backend at all.
+I looked into using the MailChimp API option, but that is not going to work from a purely static-type of site. So, while this does have your users leave the page, it ends up being a great option because you really don't have to do anything with any backend at all. Just make sure you have the proper site settings set up so it redirects users back to your blog or whatever. You do this on MailChimp's side.
 
 ### Props
 
