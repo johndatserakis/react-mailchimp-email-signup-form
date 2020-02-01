@@ -6,5 +6,5 @@ interface Props {
     title: string;
     subtitle?: string;
 }
-export declare const ReactMailchimpEmailSignupForm: (props: Props) => JSX.Element;
+declare const ReactMailchimpEmailSignupForm: (props: Props) => JSX.Element;
 export default ReactMailchimpEmailSignupForm;

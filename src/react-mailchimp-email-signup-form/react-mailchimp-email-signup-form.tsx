@@ -8,7 +8,7 @@ interface Props {
   subtitle?: string;
 };
 
-export const ReactMailchimpEmailSignupForm = (props: Props) => {
+const ReactMailchimpEmailSignupForm = (props: Props) => {
   return (
     <div className="subscribe-container">
       <div id={props.elementId + "mc_embed_signup"}>
