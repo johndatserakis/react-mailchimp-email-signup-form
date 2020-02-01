@@ -1,6 +1,6 @@
 {
   "name": "react-mailchimp-email-signup-form",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "dist/react-mailchimp-email-signup-form.js",
   "module": "dist/react-mailchimp-email-signup-form.es.js",
   "jsnext:main": "dist/react-mailchimp-email-signup-form.es.js",

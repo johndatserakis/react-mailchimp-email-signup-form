@@ -69,7 +69,7 @@ import "react-mailchimp-email-signup-form/dist/react-mailchimp-email-signup-form
 
 ```jsx
 import React from "react";
-import ReactMailchimpEmailSignupForm from "react-mailchimp-email-signup-form";
+import { ReactMailchimpEmailSignupForm } from "react-mailchimp-email-signup-form";
 
 // Here's a usage example when using functional components
 export const SignupForm = () => {
