@@ -1,22 +1,19 @@
 {
   "name": "react-mailchimp-email-signup-form",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/react-mailchimp-email-signup-form.js",
   "module": "dist/react-mailchimp-email-signup-form.es.js",
   "jsnext:main": "dist/react-mailchimp-email-signup-form.es.js",
   "files": [
     "dist"
   ],
-  "description": "Easily collect email signups using MailChimp.",
+  "description": "Easily collect email signups using MailChimp in your React projects.",
   "scripts": {
-    "build": "npm run test && rm -rf ./dist && rollup -c",
+    "build": "npm run test && rm -rf ./dist && rollup -c && rm -rf ./docs && npm run build-storybook",
     "test": "jest",
     "test:watch": "jest --watch",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "deploy-storybook": "storybook-to-ghpages",
-    "deploy-npm": "npm publish",
-    "deploy": "npm run deploy-storybook && npm run deploy-npm"
+    "build-storybook": "build-storybook -c .storybook -o docs"
   },
   "repository": {
     "type": "git",
@@ -43,10 +40,10 @@
     "@babel/core": "^7.7.4",
     "@babel/preset-typescript": "^7.8.3",
     "@storybook/addon-actions": "^5.2.6",
+    "@storybook/addon-knobs": "^5.3.9",
     "@storybook/addon-links": "^5.2.6",
     "@storybook/addons": "^5.2.6",
     "@storybook/react": "^5.2.6",
-    "@storybook/storybook-deployer": "^2.8.1",
     "@types/enzyme": "^3.10.4",
     "@types/enzyme-adapter-react-16": "^1.0.5",
     "@types/jest": "^24.0.24",
@@ -67,7 +64,5 @@
     "ts-jest": "^24.2.0",
     "typescript": "^3.7.2"
   },
-  "dependencies": {
-    "@storybook/addon-knobs": "^5.3.9"
-  }
+  "dependencies": {}
 }

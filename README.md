@@ -17,6 +17,10 @@ Easily collect email signups using MailChimp in your React projects.
 
 [View on GitHub](https://github.com/johndatserakis/react-mailchimp-email-signup-form)
 
+## Vue Version
+
+[Check out the Vue version!](https://github.com/johndatserakis/vue-mailchimp-email-signup-form)
+
 ## Install
 
 ### Package Manager

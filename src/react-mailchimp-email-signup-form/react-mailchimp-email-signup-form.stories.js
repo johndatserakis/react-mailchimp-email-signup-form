@@ -18,7 +18,7 @@ export const Base = () => {
       />
 
       <p>
-        Link to component's <a href="https://github.com/johndatserakis/react-mailchimp-email-signup-form">github.</a>
+        Link to component's <a href="https://github.com/johndatserakis/react-mailchimp-email-signup-form" target="_blank" rel="noopener noreferrer">github.</a>
       </p>
     </Fragment>
   )
