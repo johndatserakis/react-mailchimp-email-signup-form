@@ -97,5 +97,5 @@
     "type-check:watch": "yarn run type-check -- --watch"
   },
   "sideEffects": false,
-  "version": "2.0.1"
+  "version": "2.0.2"
 }
