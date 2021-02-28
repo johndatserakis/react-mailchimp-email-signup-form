@@ -39,12 +39,12 @@ yarn add react-mailchimp-email-signup-form
 
 ```scss
 // css import for when you want to import the component css into your css file/files
-@import '/path/to/node_modules/react-mailchimp-email-signup-form/dist/css/react-mailchimp-email-signup-form.css';
+@import '/path/to/node_modules/react-mailchimp-email-signup-form/dist/esm/index.css';
 ```
 
 ```javascript
 // javascript import for when you're importing the css directly in your javascript
-import 'react-mailchimp-email-signup-form/dist/css/react-mailchimp-email-signup-form.css';
+import 'react-mailchimp-email-signup-form/dist/esm/index.css';
 ```
 
 ### React
@@ -54,16 +54,14 @@ import React from 'react';
 import { ReactMailchimpEmailSignupForm } from 'react-mailchimp-email-signup-form';
 
 // Here's a usage example when using functional components
-export const SignupForm = () => {
-  return (
-    <ReactMailchimpEmailSignupForm
-      elementId="first-email-signup-form"
-      url="https://XX.us4.list-manage.com/subscribe/post?u=XXXXXXXXXXXXXX"
-      title="Subscribe to the Newsletter"
-      subtitle="We take privacy seriously and we'll never spam or sell your information."
-    />
-  );
-};
+export const SignupForm = () => (
+  <ReactMailchimpEmailSignupForm
+    elementId="first-email-signup-form"
+    url="https://XX.us4.list-manage.com/subscribe/post?u=XXXXXXXXXXXXXX"
+    title="Subscribe to the Newsletter"
+    subtitle="We take privacy seriously and we'll never spam or sell your information."
+  />
+);
 ```
 
 ### About

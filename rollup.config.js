@@ -1,7 +1,7 @@
 import analyze from 'rollup-plugin-analyzer';
+import autoprefixer from "autoprefixer";
 import babel from '@rollup/plugin-babel';
 import commonjs from '@rollup/plugin-commonjs';
-import copy from 'rollup-plugin-copy';
 import postcss from 'rollup-plugin-postcss';
 import resolve from '@rollup/plugin-node-resolve';
 import visualizer from 'rollup-plugin-visualizer';
@@ -34,19 +34,15 @@ export default {
     resolve({ extensions }),
     commonjs(),
     postcss({
-      extract: 'dist/css/react-mailchimp-email-signup-form.css',
+      plugins: [autoprefixer()],
+      sourceMap: true,
+      extract: true,
+      minimize: true
     }),
     babel({
       babelHelpers: 'bundled',
       extensions,
       include: ['src/**/*'],
-    }),
-    // Allow final css to be saved as a single file at ./dist/css/...
-    // This is due to a limitiation in the latest version of postcss
-    // https://github.com/egoist/rollup-plugin-postcss/issues/250
-    copy({
-      targets: [{ src: 'dist/esm/dist/css/*', dest: 'dist/css' }],
-      hook: 'writeBundle',
     }),
     visualizer(),
     analyze(),
