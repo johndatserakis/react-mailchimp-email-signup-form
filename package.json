@@ -86,7 +86,7 @@
     "build:types:esm": "tsc --outDir dist/esm --isolatedModules false --declaration  --emitDeclarationOnly",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ./src",
     "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx ./src && prettier --write ./src",
-    "storybook:build": "rm -rf ./docs && build-storybook -c .storybook -o storybook",
+    "storybook:build": "rm -rf ./docs && build-storybook -c .storybook -o docs",
     "storybook:start": "start-storybook -p 6006",
     "test": "yarn test:unit",
     "test:unit": "jest",
@@ -95,5 +95,5 @@
     "type-check:watch": "yarn run type-check -- --watch"
   },
   "sideEffects": false,
-  "version": "2.0.0"
+  "version": "2.0.1"
 }

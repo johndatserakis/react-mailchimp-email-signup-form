@@ -11,6 +11,7 @@ __snapshots__
 
 # production
 #/dist
+#/docs
 stats.html
 
 # misc
