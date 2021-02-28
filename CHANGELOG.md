@@ -2,7 +2,8 @@
 
 ## 2.0.0 (2021-02-27)
 
-- Update component
+- Update Storybook install
+- Add build tools
 
 ## 1.0.0 (2020-02-01)
 

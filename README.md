@@ -133,7 +133,7 @@ yarn storybook:start
 yarn test:unit
 
 # Build everything and run tests
-yar build
+yarn build
 ```
 
 ## Other
