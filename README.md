@@ -33,47 +33,25 @@ npm i react-mailchimp-email-signup-form
 yarn add react-mailchimp-email-signup-form
 ```
 
-### Browser
-
-Or you can include it through the browser at the bottom of your page, along with the css at the top of the page:
-
-```html
-<!--
-  Please note if you're using the browser method you're going to want to
-  adjust the version number as needed. The number given here is just an
-  initial version.
--->
-
-<link
-  rel="stylesheet"
-  type="text/css"
-  href="https://unpkg.com/react-mailchimp-email-signup-form@1.0.0/dist/react-mailchimp-email-signup-form.css"
-/>
-
-<script src="https://unpkg.com/react-mailchimp-email-signup-form@1.0.0/dist/index.js"></script>
-```
-
 ## Use
 
 ### CSS
 
 ```scss
-// css import for when you want to import the component css into your css
-// file/files
-@import "/path/to/node_modules/react-mailchimp-email-signup-form.css";
+// css import for when you want to import the component css into your css file/files
+@import '/path/to/node_modules/react-mailchimp-email-signup-form/dist/css/react-mailchimp-email-signup-form.css';
 ```
 
 ```javascript
-// javascript import for when you're importing the css directly in your
-// javascript
-import "react-mailchimp-email-signup-form/dist/react-mailchimp-email-signup-form.css";
+// javascript import for when you're importing the css directly in your javascript
+import 'react-mailchimp-email-signup-form/dist/css/react-mailchimp-email-signup-form.css';
 ```
 
 ### React
 
 ```jsx
-import React from "react";
-import { ReactMailchimpEmailSignupForm } from "react-mailchimp-email-signup-form";
+import React from 'react';
+import { ReactMailchimpEmailSignupForm } from 'react-mailchimp-email-signup-form';
 
 // Here's a usage example when using functional components
 export const SignupForm = () => {
@@ -84,7 +62,7 @@ export const SignupForm = () => {
       title="Subscribe to the Newsletter"
       subtitle="We take privacy seriously and we'll never spam or sell your information."
     />
-  )
+  );
 };
 ```
 
@@ -94,7 +72,7 @@ This is just a really simple component that let's you use MailChimp's awesome em
 
 Go to your MailChimp admin. Click on `Create`, the `Signup Form`. Now, choose your audience, and stay on the `Embedded form` option and click `Begin`.
 
-On the next screen, you'll see some demos for some embedded forms MailChip is offering. We don't want those - but we *do* want to `url` they bring. Go into the form and grab the `url` from the `<form></form>` `action` attribute. For me, this looks something like the following:
+On the next screen, you'll see some demos for some embedded forms MailChip is offering. We don't want those - but we _do_ want to `url` they bring. Go into the form and grab the `url` from the `<form></form>` `action` attribute. For me, this looks something like the following:
 
 ```bash
 https://XXXXX.us4.list-manage.com/subscribe/post?u=XXXXXXXXXXXXXXXXXXXXXXXX&id=XXXXXXXXXX
@@ -112,17 +90,17 @@ I looked into using the MailChimp API option, but that is not going to work from
 
 ### Props
 
-| prop      | type   | required | default | possible values | description                        |
-|-----------|--------|----------|---------|-----------------|------------------------------------|
-| elementId | String | Yes      |         |                 | A unique string form your element. |
+| prop      | type   | required | default | possible values | description                                              |
+| --------- | ------ | -------- | ------- | --------------- | -------------------------------------------------------- |
+| elementId | String | Yes      |         |                 | A unique string form your element.                       |
 | url       | String | Yes      |         |                 | The particular form `post` url from your MailChimp page. |
-| title     | String | Yes      |         |                 | A title for your signup form.      |
-| subtitle  | String | No       |         |                 | A subtitle for your signup form.   |
+| title     | String | Yes      |         |                 | A title for your signup form.                            |
+| subtitle  | String | No       |         |                 | A subtitle for your signup form.                         |
 
 ### SCSS Structure
 
 ```scss
-.subscribe-container  {
+.subscribe-container {
   form {
   }
 
@@ -145,17 +123,17 @@ I looked into using the MailChimp API option, but that is not going to work from
 ### Development
 
 ```bash
-# install dependencies
-npm install
+# Install dependencies
+yarn
 
-# serve with hot reload and storybook
-npm run storybook
+# Serve with hot reloading and Storybook
+yarn storybook:start
 
-# run the tests
-npm run test
+# Run the tests
+yarn test:unit
 
-# build everything and run tests
-npm run build
+# Build everything and run tests
+yarn build
 ```
 
 ## Other
